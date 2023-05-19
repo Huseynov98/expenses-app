@@ -1,0 +1,250 @@
+body {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  padding: 30px;
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 400;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.5;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 28px;
+}
+ol {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+input {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.label {
+  font-weight: 700;
+}
+
+.rub::after {
+  content: "руб.";
+}
+
+.expenses {
+  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 28px;
+  row-gap: 48px;
+}
+.expensesInput {
+  width: 484px;
+}
+.categorySelect {
+  margin-top: 18px;
+  width: 484px;
+  height: 58px;
+  padding-left: 22px;
+  font-size: inherit;
+  border: 1px solid #000;
+}
+.moneyInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 17px 9px 22px;
+  border: 1px solid #000;
+}
+.rub {
+}
+.moneyInput__input {
+  width: 100%;
+  border: none;
+  font-size: inherit;
+}
+.addButton {
+  display: block;
+  width: 370px;
+  height: 58px;
+  padding: 10px 110px;
+  font-size: inherit;
+  color: #ffffff;
+  background-color: #0094ff;
+  border: none;
+  outline: 0;
+}
+.stats {
+  width: 484px;
+}
+.stats__limit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.stats__changeLimitbtn {
+  cursor: pointer;
+}
+.stats__total {
+  margin-top: 13px;
+}
+.stats__status {
+  margin-top: 35px;
+}
+.stats__statusText_positive {
+  color: #039000;
+}
+
+.stats__statusText_negative {
+  color: red;
+}
+.history {
+  width: 484px;
+}
+
+.history__list {
+  margin-top: 21px;
+}
+
+.clearButton {
+  display: block;
+  padding: 10px 95px;
+  font-size: inherit;
+  color: #ffffff;
+  background-color: #0094ff;
+  border: none;
+  outline: 0;
+  background: #ff0000;
+}
+
+@media (max-width: 1199px) {
+  .expenses {
+    margin-top: 28px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 28px;
+    row-gap: 48px;
+  }
+  .expensesInput {
+    width: 484px;
+  }
+  .categorySelect {
+    margin-top: 18px;
+    width: 484px;
+    height: 58px;
+    padding-left: 22px;
+    font-size: inherit;
+    border: 1px solid #000;
+  }
+  .moneyInput {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 17px 9px 22px;
+    border: 1px solid #000;
+  }
+
+  .moneyInput__input {
+    width: 100%;
+    border: none;
+    font-size: inherit;
+  }
+  .addButton {
+    display: block;
+    width: 370px;
+    height: 58px;
+    padding: 10px 110px;
+    font-size: inherit;
+    color: #ffffff;
+    background-color: #0094ff;
+    border: none;
+    outline: 0;
+  }
+  .stats {
+    width: 484px;
+  }
+  .stats__total {
+    margin-top: 13px;
+  }
+  .stats__status {
+    margin-top: 35px;
+  }
+  .stats__statusText_positive {
+    color: #039000;
+  }
+
+  .stats__statusText_negative {
+    color: red;
+  }
+  .history {
+    width: 484px;
+  }
+
+  .history__list {
+    margin-top: 21px;
+  }
+
+  .clearButton {
+    display: block;
+    padding: 10px 95px;
+    font-size: inherit;
+    color: #ffffff;
+    background-color: #0094ff;
+    border: none;
+    outline: 0;
+    background: #ff0000;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    padding: 12px;
+  }
+  h1 {
+    width: 360px;
+  }
+  .expenses {
+    width: 360px;
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .expensesInput {
+    width: 360px;
+  }
+  .addButton {
+    width: 360px;
+  }
+  .categorySelect {
+    width: 360px;
+  }
+  .stats {
+    width: 360px;
+  }
+  .moneyInput {
+    width: 100%;
+  }
+  .history {
+    width: 360px;
+  }
+  .clearButton {
+    width: 360px;
+    font-size: 22px;
+    padding: 10px 75px;
+  }
+}
