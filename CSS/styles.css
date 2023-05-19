@@ -217,34 +217,35 @@ input::-webkit-inner-spin-button {
     padding: 12px;
   }
   h1 {
-    width: 360px;
+    width: 330px;
   }
   .expenses {
-    width: 360px;
+    width: 330px;
     margin-top: 0;
     flex-direction: column;
   }
   .expensesInput {
-    width: 360px;
+    width: 330px;
   }
   .addButton {
-    width: 360px;
+    width: 330px;
+    padding: 10px 95px;
   }
   .categorySelect {
-    width: 360px;
+    width: 330px;
   }
   .stats {
-    width: 360px;
+    width: 330px;
   }
   .moneyInput {
     width: 100%;
   }
   .history {
-    width: 360px;
+    width: 330px;
   }
   .clearButton {
-    width: 360px;
+    width: 330px;
     font-size: 22px;
-    padding: 10px 75px;
+    padding: 10px 60px;
   }
 }
